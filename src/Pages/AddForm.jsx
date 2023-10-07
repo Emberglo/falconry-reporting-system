@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 const AddForm = () => {
   return (
     <div>
-      Page to Add a Form
-      <button>
+        Page to Add a Form
         <Link to="/">Home</Link>
-      </button>
     </div>
   )
 }

@@ -1,53 +1,67 @@
+/* Colors */
+
+/* background: #FCF9EE
+
+Light Green: #D1EEE8
+
+Grey: #B4C2C2
+
+Dark Green: #8A9793
+
+Dark Brown: #4A4244 */
+
+/* SECTION - App Styles */
+
+body {
+  background-color: #FCF9EE;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* SECTION - Header */
+
+/* SECTION - Home Page */
+
+/* SECTION - Add Form Page */
+
+/* SECTION - Form Page */
+
+/* SECTION - Component Styles */
+
+/* SECTION - Forms Component */
+
+.forms-component {
+  padding: 0px 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* SECTION - Form Card */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: fit-content;
+  width: fit-content;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #D1EEE8;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(215,215,215,0.75);
+  -moz-box-shadow: 0px 0px 15px 5px rgba(215,215,215,0.75);
+  box-shadow: 0px 0px 15px 5px rgba(215, 215, 215, 0.75);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* SECTION - General Styles */
 
 Link {
   text-decoration: none;
   color: black;
 }
 
-.form-card {
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-  border: 1px solid black;
-  border-radius: 15px;
-  height: fit-content;
-  width: fit-content;
+p {
+  margin: 0px;
+}
+
+h1, h2 {
+  color: #4A4244;
 }

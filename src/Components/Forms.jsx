@@ -4,13 +4,11 @@ import FormCard from "./FormCard";
 const Forms = () => {
   return (
     <div>
-      <h2>Your Forms</h2>
-      <button>
+        <h2>Your Forms</h2>
         <Link to="/add-form">Add A Form</Link>
-      </button>
-      <div>
-        <FormCard />
-      </div>
+        <div className="forms-component">
+            <FormCard />
+        </div>
     </div>
   )
 }
