@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './Components/Header';
 import Home from './Pages/Home';
 import AddForm from './Pages/AddForm';
+import Form from './Pages/Form';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/add-form' element={<AddForm />} />
+          <Route path='/form/:id' element={<Form />} />
         </Routes>
       </div>
     </BrowserRouter>

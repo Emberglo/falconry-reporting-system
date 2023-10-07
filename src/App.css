@@ -41,3 +41,13 @@ Link {
   text-decoration: none;
   color: black;
 }
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border: 1px solid black;
+  border-radius: 15px;
+  height: fit-content;
+  width: fit-content;
+}

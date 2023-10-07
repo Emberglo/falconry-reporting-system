@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom"
-import Form from "./Form"
+import { Link } from "react-router-dom";
+import FormCard from "./FormCard";
 
 const Forms = () => {
   return (
@@ -9,7 +9,7 @@ const Forms = () => {
         <Link to="/add-form">Add A Form</Link>
       </button>
       <div>
-        <Form />
+        <FormCard />
       </div>
     </div>
   )
