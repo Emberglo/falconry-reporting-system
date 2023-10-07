@@ -1,14 +1,20 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './Components/Header';
-import Forms from './Components/Forms';
+import Home from './Pages/Home';
+import AddForm from './Pages/AddForm';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-
-      <Forms />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/add-form' element={<AddForm />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
