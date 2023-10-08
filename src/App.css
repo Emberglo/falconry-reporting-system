@@ -26,6 +26,11 @@ body {
 
 /* SECTION - Add Form Page */
 
+.add-form-page {
+  display: flex;
+  flex-direction: column;
+}
+
 /* SECTION - Form Page */
 
 /* SECTION - Component Styles */
