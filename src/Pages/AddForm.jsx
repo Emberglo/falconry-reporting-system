@@ -34,17 +34,27 @@ const AddForm = () => {
     const [recipientPermit, setRecipientPermit] = useState();
     const [recipientTypeOfAcquisition, setRecipientTypeOfAcquisition] = useState();
 
-    const [] = useState();
+    const [captureRecapture, setCaptureRecapture] = useState();
+    const [county, setCounty] = useState();
+    const [state, setState] = useState();
+    const [colorPhase, setColorPhase] = useState();
+    
+    const [oldBandNumber, setOldBandNumber] = useState();
+    const [oldBandType, setOldBandType] = useState();
+    const [newBandNumber, setNewBandNumber] = useState();
+    const [newBandType, setNewBandType] = useState();
 
-
+    const [name, setName] = useState();
+    const [phoneNumber, setPhoneNumber] = useState();
+    const [date, setDate] = useState();
 
   return (
     <div className="add-form-page">
         <Link to="/">Home</Link>
 
-        <form action="">
+        <form action="" className="form">
 
-            <div>
+            <div className="section-1 form-section">
                 <label htmlFor="species">
                     Species:
                     <input type="text" />
@@ -86,7 +96,7 @@ const AddForm = () => {
                 </label>
             </div>
 
-            <div>
+            <div className="section-2 form-section">
                 <label htmlFor="senderPermitNumber">
                     Sender's USFWS Permit Number:
                     <input type="text" />
@@ -153,7 +163,7 @@ const AddForm = () => {
                 </label>
             </div>
 
-            <div>
+            <div className="section-3 form-section">
                 <label htmlFor="recipientPermitNumber">
                     Recipient's USFWS Permit Number:
                     <input type="text" />
@@ -166,38 +176,119 @@ const AddForm = () => {
                     Recipient's Date of Acquisition:
                     <input type="text" />
                 </label>
-                <label htmlFor="">
+                <label htmlFor="recipientAddress">
+                    Recipient's Address:
                     <input type="text" />
                 </label>
-                <label htmlFor="">
+                <label htmlFor="recipientCity">
+                    Recipient's City:
                     <input type="text" />
                 </label>
-                <label htmlFor="">
+                <label htmlFor="recipientState">
+                    Recipient's State:
                     <input type="text" />
                 </label>
-                <label htmlFor="">
+                <label htmlFor="recipientZip">
+                    Recipient's Zip Code:
                     <input type="text" />
                 </label>
-                <label htmlFor="">
+                <label htmlFor="recipientEmail">
+                    Recipient's Email Address:
                     <input type="text" />
                 </label>
-                <label htmlFor="">
+                <label htmlFor="recipientPermit">
+                    Recipient's Permit Type:
                     <select name="" id="">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                        <option value="stateFalconry">State Falconry</option>
+                        <option value="fwsRaptorPropigation">FWS Raptor Prop</option>
+                        <option value="other">Other</option>
                     </select>
+                    If Other:
                     <input type="text" />
                 </label>
-                <label htmlFor="">
+                <label htmlFor="recipientTypeOfAcquisition">
+                    Type of Acquisition:
                     <select name="" id="">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                        <option value="gift">Gift</option>
+                        <option value="purchase">Purchase</option>
+                        <option value="loan">Loan</option>
+                        <option value="captureRecapture">Capture/Recapture (complete Section 4)</option>
                     </select>
                 </label>
             </div>
+
+            <div className="section-4 form-section">
+                <label htmlFor="captureRecapture">
+                    Capture or Recapture:
+                    <select name="" id="">
+                        <option value="capture">Capture</option>
+                        <option value="recapture">Recapture</option>
+                    </select>
+                </label>
+                <label htmlFor="county">
+                    County of Capture:
+                    <input type="text" />
+                </label>
+                <label htmlFor="state">
+                    State of Capture:
+                    {/* TODO - possibly switch this to a dropdown */}
+                    <input type="text" />
+                </label>
+                <label htmlFor="colorPhase">
+                    If you captured a Gyrfalcon, what color is it?
+                    <select name="" id="">
+                        <option value="grey">Grey</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="unknown">Unkown (nestling)</option>
+                    </select>
+                </label>
+            </div>
+
+            <div className="section-5 form-section">
+                <label htmlFor="oldBandNumber">
+                    Old Band Number:
+                    <input type="text" />
+                </label>
+                <label htmlFor="oldBandType">
+                    Old Band Type:
+                    <select name="" id="">
+                        <option value="seamlessMetal">Seamless Metal</option>
+                        <option value="yellowPlastic">Yellow Plastic</option>
+                        <option value="blackPlastic">Black Plastic</option>
+                        <option value="microchip">Microchip</option>
+                    </select>
+                </label>
+                <label htmlFor="newBandNumber">
+                    New Band Number:
+                    <input type="text" />
+                </label>
+                <label htmlFor="newBandType">
+                    New Band Type:
+                    <select name="" id="">
+                        <option value="yellowPlastic">Yellow Plastic</option>
+                        <option value="blackPlastic">Black Plastic</option>
+                        <option value="microchip">Microchip</option>
+                    </select>
+                </label>
+            </div>
+
+            <div className="section-6 form-section">
+                <label htmlFor="name">
+                    Name:
+                    <input type="text" />
+                </label>
+                <label htmlFor="phoneNumber">
+                    Phone Number:
+                    <input type="text" />
+                </label>
+                <label htmlFor="date">
+                    Date:
+                    <input type="date" name="" id="" />
+                </label>
+            </div>
+
+            <button type="submit" className="submit-button">Submit</button>
 
         </form>
     </div>

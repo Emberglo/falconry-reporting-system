@@ -1,6 +1,7 @@
-/* Colors */
+/* 
+Colors
 
-/* background: #FCF9EE
+background: #FCF9EE
 
 Light Green: #D1EEE8
 
@@ -8,7 +9,8 @@ Grey: #B4C2C2
 
 Dark Green: #8A9793
 
-Dark Brown: #4A4244 */
+Dark Brown: #4A4244 
+*/
 
 /* SECTION - App Styles */
 
@@ -29,6 +31,34 @@ body {
 .add-form-page {
   display: flex;
   flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section {
+  padding: 15px 0px;
+  margin: 5px 25px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 5px 0px;
+}
+
+input, select {
+  margin: 0px 10px;
+}
+
+.submit-button {
+  width: 150px;
+  align-self: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 /* SECTION - Form Page */
