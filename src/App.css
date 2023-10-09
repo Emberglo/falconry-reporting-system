@@ -22,11 +22,64 @@ body {
   text-align: center;
 }
 
-/* SECTION - Header */
+/* SECTION - General Styles */
 
-/* SECTION - Home Page */
+a {
+  text-decoration: none;
+  color: #FCF9EE;
+  background-color: #4A4244;
+  border-radius: 5px;
+  width: fit-content;
+  align-self: center;
+  padding: 5px 15px;
+}
 
-/* SECTION - Add Form Page */
+.form-card-link {
+  text-decoration: none;
+  color: #4A4244;
+  background-color: #D1EEE8;
+}
+
+p {
+  margin: 0px;
+}
+
+h1, h2 {
+  color: #4A4244;
+}
+
+/* SECTION - Component Styles */
+
+/* Header */
+
+/* Forms Component */
+
+.forms-component {
+  padding: 0px 25px;
+}
+
+/* Form Card */
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #D1EEE8;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(215,215,215,0.75);
+  -moz-box-shadow: 0px 0px 15px 5px rgba(215,215,215,0.75);
+  box-shadow: 0px 0px 15px 5px rgba(215, 215, 215, 0.75);
+}
+
+/* SECTION - Page Styles */
+
+/* Home Page */
+
+/* Form Page */
+
+/* Add Form Page */
 
 .add-form-page {
   display: flex;
@@ -46,12 +99,586 @@ body {
   flex-direction: column;
 }
 
-label {
-  margin: 5px 0px;
+/* Form Section 1 */
+
+.section-1 {
+  display: grid;
+  grid-template-columns: .75fr 1.25fr 1.25fr .75fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 15px;
+  text-align: left;
 }
 
-input, select {
-  margin: 0px 10px;
+.section-1-item-1 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.section-1-item-2 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.section-1-item-3 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.section-1-item-4 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.section-1-item-5 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+.section-1-item-6 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+.section-1-item-7 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+.section-1-item-8 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+.section-1-item-9 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+.section-1-item-10 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+.section-1-item-11 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 6;
+}
+.section-1-item-12 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 6;
+}
+.section-1-item-13 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 7;
+  grid-row-end: 7;
+}
+.section-1-item-14 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 7;
+}
+
+/* Form Section 2 */
+
+.section-2 {
+  display: grid;
+  grid-template-columns: .75fr 1.25fr 1.25fr .75fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 15px;
+  text-align: left;
+}
+
+.section-2-item-1 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.section-2-item-2 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.section-2-item-3 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.section-2-item-4 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.section-2-item-5 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+.section-2-item-6 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+.section-2-item-7 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+.section-2-item-8 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+.section-2-item-9 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+.section-2-item-10 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+.section-2-item-11 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 6;
+}
+.section-2-item-12 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 6;
+}
+.section-2-item-13 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 7;
+  grid-row-end: 7;
+}
+.section-2-item-14 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 7;
+}
+.section-2-item-15 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 8;
+  grid-row-end: 8;
+}
+.section-2-item-16 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 8;
+  grid-row-end: 8;
+}
+.section-2-item-17 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 9;
+  grid-row-end: 9;
+}
+.section-2-item-18 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 9;
+}
+.section-2-item-19 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 10;
+  grid-row-end: 10;
+}
+.section-2-item-20 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 10;
+  grid-row-end: 10;
+}
+.section-2-item-21 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 11;
+  grid-row-end: 11;
+}
+.section-2-item-22 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 11;
+  grid-row-end: 11;
+}
+.section-2-item-23 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 12;
+  grid-row-end: 12;
+}
+.section-2-item-24 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 12;
+  grid-row-end: 12;
+}
+.section-2-item-25 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 13;
+  grid-row-end: 13;
+}
+.section-2-item-26 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 13;
+  grid-row-end: 13;
+}
+.section-2-item-27 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 14;
+  grid-row-end: 14;
+}
+.section-2-item-28 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 14;
+  grid-row-end: 14;
+}
+
+/* Form Section 3 */
+
+.section-3 {
+  display: grid;
+  grid-template-columns: .75fr 1.25fr 1.25fr .75fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 15px;
+  text-align: left;
+}
+
+.section-3-item-1 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.section-3-item-2 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.section-3-item-3 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.section-3-item-4 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.section-3-item-5 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+.section-3-item-6 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+.section-3-item-7 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+.section-3-item-8 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+.section-3-item-9 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+.section-3-item-10 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+.section-3-item-11 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 6;
+}
+.section-3-item-12 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 6;
+}
+.section-3-item-13 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 7;
+  grid-row-end: 7;
+}
+.section-3-item-14 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 7;
+}
+.section-3-item-15 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 8;
+  grid-row-end: 8;
+}
+.section-3-item-16 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 8;
+  grid-row-end: 8;
+}
+.section-3-item-17 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 9;
+  grid-row-end: 9;
+}
+.section-3-item-18 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 9;
+}
+.section-3-item-19 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 10;
+  grid-row-end: 10;
+}
+.section-3-item-20 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 10;
+  grid-row-end: 10;
+}
+.section-3-item-21 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 11;
+  grid-row-end: 11;
+}
+.section-3-item-22 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 11;
+  grid-row-end: 11;
+}
+
+/* Form Section 4 */
+
+.section-4 {
+  display: grid;
+  grid-template-columns: .75fr 1.25fr 1.25fr .75fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 15px;
+  text-align: left;
+}
+
+.section-4-item-1 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.section-4-item-2 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.section-4-item-3 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.section-4-item-4 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.section-4-item-5 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+.section-4-item-6 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+.section-4-item-7 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+.section-4-item-8 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+/* Form Section 5 */
+
+.section-5 {
+  display: grid;
+  grid-template-columns: .75fr 1.25fr 1.25fr .75fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 15px;
+  text-align: left;
+}
+
+.section-5-item-1 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.section-5-item-2 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.section-5-item-3 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.section-5-item-4 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.section-5-item-5 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+.section-5-item-6 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+.section-5-item-7 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+.section-5-item-8 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+/* Form Section 6 */
+
+.section-6 {
+  display: grid;
+  grid-template-columns: .75fr 1.25fr 1.25fr .75fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 15px;
+  text-align: left;
+}
+
+.section-6-item-1 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.section-6-item-2 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.section-6-item-3 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.section-6-item-4 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.section-6-item-5 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+.section-6-item-6 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
 }
 
 .submit-button {
@@ -59,44 +686,4 @@ input, select {
   align-self: center;
   margin-top: 15px;
   margin-bottom: 25px;
-}
-
-/* SECTION - Form Page */
-
-/* SECTION - Component Styles */
-
-/* SECTION - Forms Component */
-
-.forms-component {
-  padding: 0px 25px;
-}
-
-/* SECTION - Form Card */
-
-.form-card {
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
-  width: fit-content;
-  padding: 25px;
-  border-radius: 15px;
-  background-color: #D1EEE8;
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(215,215,215,0.75);
-  -moz-box-shadow: 0px 0px 15px 5px rgba(215,215,215,0.75);
-  box-shadow: 0px 0px 15px 5px rgba(215, 215, 215, 0.75);
-}
-
-/* SECTION - General Styles */
-
-Link {
-  text-decoration: none;
-  color: black;
-}
-
-p {
-  margin: 0px;
-}
-
-h1, h2 {
-  color: #4A4244;
 }

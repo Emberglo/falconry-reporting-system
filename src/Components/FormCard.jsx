@@ -6,7 +6,7 @@ const FormCard = () => {
   return (
     <div className="form-card">
       {/* <img src="https://picsum.photos/150" alt="placeholder" /> */}
-      <Link to={`/form/${id}`}>
+      <Link to={`/form/${id}`} className="form-card-link">
         <p>Species</p>
         <p>File Date</p>
         {/* <p>Click To View Form</p> */}

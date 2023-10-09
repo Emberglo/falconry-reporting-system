@@ -5,7 +5,7 @@ const Forms = () => {
   return (
     <div>
         <h2>Your Forms</h2>
-        <Link to="/add-form">Add A Form</Link>
+        <Link to="/add-form">Add New Form</Link>
         <div className="forms-component">
             <FormCard />
         </div>
