@@ -686,4 +686,8 @@ h1, h2 {
   align-self: center;
   margin-top: 15px;
   margin-bottom: 25px;
+  color: #FCF9EE;
+  background-color: #4A4244;
+  border-radius: 5px;
+  padding: 5px 0px;
 }

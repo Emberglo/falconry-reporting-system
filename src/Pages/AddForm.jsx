@@ -252,7 +252,7 @@ const AddForm = () => {
                 <input type="date" className="section-6-item-6" />
             </div>
 
-            <button type="submit" className="submit-button">Submit</button>
+            <button type="submit" className="submit-button">Submit Form</button>
 
         </form>
     </div>
