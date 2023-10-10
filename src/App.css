@@ -89,6 +89,7 @@ h1, h2 {
 .form {
   display: flex;
   flex-direction: column;
+  margin: 15px 0px;
 }
 
 .form-section {
@@ -114,7 +115,7 @@ h1, h2 {
 .section-2 {
   display: grid;
   grid-template-columns: .75fr 1.25fr 1.25fr .75fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   row-gap: 15px;
   text-align: left;
 }
@@ -316,18 +317,6 @@ h1, h2 {
   grid-column-end: 3;
   grid-row-start: 13;
   grid-row-end: 13;
-}
-.item-27 {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 14;
-  grid-row-end: 14;
-}
-.item-28 {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 14;
-  grid-row-end: 14;
 }
 
 .submit-button {
