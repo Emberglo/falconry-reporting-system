@@ -48,6 +48,10 @@ const AddForm = () => {
     const [phoneNumber, setPhoneNumber] = useState();
     const [date, setDate] = useState();
 
+    const handleChange = (e) => {
+        setInput
+    }
+
   return (
     <div className="add-form-page">
         <Link to="/">Home</Link>
