@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import FormCard from "./FormCard";
+import data from "../data";
 
 const Forms = () => {
   return (
