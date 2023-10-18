@@ -1,18 +1,29 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import data from "../data";
 
 const Form = () => {
+
+  const id = useParams();
+  const selectedForm = data.findIndex(form => form.name === id);
+
+  function buttonClick() {
+    console.log(id);
+    console.log(data);
+    console.log(selectedForm);
+  }
+
   return (
     <div>
       <Link to="/">Home</Link>
-
+<button onClick={buttonClick}>click me</button>
       <div className="form">
         
         <div className="section-1 form-section">
             <div className="item-1">Species:</div>
-            <div className="item-2">Species Value</div>
+            <div className="item-2"></div>
 
             <div className="item-3">USFWS Band Number:</div>
-            <div className="item-4">USFWS Band Number Value</div>
+            <div className="item-4"></div>
 
             <div className="item-5">Sex:</div>
             <div className="item-6">Sex Value</div>

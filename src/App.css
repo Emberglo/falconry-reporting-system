@@ -56,6 +56,8 @@ h1, h2 {
 
 .forms-component {
   padding: 0px 25px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Form Card */
@@ -66,6 +68,7 @@ h1, h2 {
   height: fit-content;
   width: fit-content;
   padding: 25px;
+  margin: 15px;
   border-radius: 15px;
   background-color: #D1EEE8;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(215,215,215,0.75);
